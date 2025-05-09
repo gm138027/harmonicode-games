@@ -1,5 +1,1 @@
-name = "harmonicode-games"
-compatibility_date = "2025-05-09"
 
-[site]
-bucket = "./out"

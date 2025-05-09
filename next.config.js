@@ -7,7 +7,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // 完全移除assetPrefix配置
+  assetPrefix: './',
 }
 
 module.exports = nextConfig

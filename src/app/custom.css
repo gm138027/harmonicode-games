@@ -1,0 +1,360 @@
+:root {
+  /* 苹果经典色系 */
+  --apple-blue: #007AFF;
+  --apple-green: #34C759;
+  --apple-red: #FF3B30;
+  --apple-orange: #FF9500;
+  --apple-yellow: #FFCC00;
+  --apple-purple: #AF52DE;
+  --apple-teal: #5AC8FA;
+  --apple-gray-50: #F9F9F9;
+  --apple-gray-100: #F5F5F7;
+  --apple-gray-200: #E5E5EA;
+  --apple-gray-300: #D1D1D6;
+  --apple-gray-500: #8E8E93;
+  --apple-gray-700: #636366;
+  --apple-gray-900: #1C1C1E;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--apple-gray-900);
+  background-color: var(--apple-gray-50);
+  line-height: 1.5;
+}
+
+/* 通用容器 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* 导航栏 */
+header {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--apple-blue);
+}
+
+.nav-brand a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* LOGO 样式 */
+.logo-image {
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.nav-brand a:hover .logo-image {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--apple-gray-700);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--apple-blue);
+}
+
+/* 英雄区域 */
+.hero-section {
+  background-color: white; /* 改为白色背景 */
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hero-section::after {
+  content: none; /* 移除多余的渐变线 */
+}
+
+/* 特色区域 */
+.featured-section {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+/* 关于区域 */
+.about-section {
+  background-color: #FBFBFD; /* 更浅的背景，更接近苹果官网 */
+  padding: 5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* 页脚 */
+.footer {
+  background-color: white;
+  border-top: 1px solid var(--apple-gray-200);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--apple-gray-500);
+}
+
+/* 布局元素 */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.w-half {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .w-half {
+    width: 50%;
+  }
+}
+
+/* 强制左右排版，但不使用水平滚动 */
+.force-flex-row {
+  display: flex;
+  flex-direction: row; /* 在所有屏幕尺寸上保持横向排列 */
+  flex-wrap: wrap; /* 在小屏幕上允许换行 */
+  gap: 1rem;
+}
+
+.force-w-half {
+  width: 48%; /* 稍微减少宽度，留出间距 */
+  box-sizing: border-box; /* 确保padding计入宽度内 */
+}
+
+/* 小屏幕上的适配 */
+@media (max-width: 768px) {
+  .force-flex-row {
+    flex-direction: column; /* 在小屏幕上改为纵向排列 */
+  }
+  
+  .force-w-half {
+    width: 100%; /* 小屏幕上宽度占满 */
+    margin-bottom: 1rem; /* 添加下方间距 */
+  }
+}
+
+/* 标题和文本 */
+.title-large {
+  font-size: 2.5rem;
+  font-weight: 600; /* 苹果通常使用较轻的字重 */
+  letter-spacing: -0.02em;
+  color: var(--apple-gray-900);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--apple-gray-700);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--apple-gray-900);
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+/* 按钮样式 */
+.button-primary {
+  background: linear-gradient(135deg, var(--apple-blue), var(--apple-purple));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500; /* 苹果按钮字重通常是中等的 */
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.button-primary:hover {
+  background: linear-gradient(135deg, #0071e3, #9541c7); /* 稍微深一点的蓝紫渐变 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button-secondary {
+  background-color: rgba(175, 82, 222, 0.1);
+  color: var(--apple-purple);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.button-secondary:hover {
+  background-color: rgba(175, 82, 222, 0.15);
+}
+
+/* 卡片样式 */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.03); /* 更柔和的阴影，类似苹果风格 */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+/* 游戏嵌入 */
+.game-embed {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.03);
+}
+
+/* 图标容器 */
+.icon-container {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(0, 122, 255, 0.08); /* 更浅的背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.icon-container.green {
+  background-color: rgba(52, 199, 89, 0.08); /* 更浅的背景 */
+}
+
+.icon-container.purple {
+  background-color: rgba(175, 82, 222, 0.08); /* 更浅的背景 */
+}
+
+/* 辅助类 */
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-8 { margin-bottom: 2rem; }
+
+.text-center { text-align: center; }
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 为锚点位置添加一些顶部填充，这样内容不会被导航栏遮挡 */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* 响应式设计调整 */
+@media (max-width: 768px) {
+  .title-large {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-section, 
+  .featured-section,
+  .about-section {
+    padding: 3rem 0;
+  }
+  
+  .game-embed {
+    height: 400px;
+  }
+  
+  /* 移动设备导航栏调整 */
+  .nav-brand span {
+    font-size: 1.2rem;
+  }
+  
+  .logo-image {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  /* 移动设备上的图片容器调整 */
+  .hero-section .image-container,
+  .about-section .image-container {
+    margin-top: 1rem;
+  }
+}
+
+/* 中等尺寸屏幕调整 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-section .image-container {
+    height: 300px;
+  }
+  
+  .about-section .image-container {
+    height: 320px;
+  }
+}
+
+/* 图片容器和悬停效果 */
+.image-container {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.image-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.image-container:hover .zoom-image {
+  transform: scale(1.05);
+}

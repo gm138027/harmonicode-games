@@ -27,7 +27,7 @@ export default function RootLayout({
             <nav className="nav-container">
               <div className="nav-brand">
                 <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <img
+                  <Image 
                     src="/LOGO.png" 
                     alt="HarmoniCode Games Logo" 
                     width={40} 

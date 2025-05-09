@@ -1,6 +1,5 @@
 name = "harmonicode-games"
 compatibility_date = "2025-05-09"
-main = "./.output/server/index.mjs"
 
 [site]
-bucket = "./.next"
+bucket = "./out"

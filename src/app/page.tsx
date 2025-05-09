@@ -45,7 +45,8 @@ export default function Home() {
         }
       }) }} />
       
-      <Script id="product-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+     <Script id="product-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+{
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "HarmoniCode Games Midiano",
@@ -60,31 +61,20 @@ export default function Home() {
     "url": "https://harmonicode-games.com/midiano",
     "priceCurrency": "USD",
     "price": "0",
-    "availability": "https://schema.org/InStock",
     "priceValidUntil": "2026-05-10",
+    "availability": "https://schema.org/InStock",
     "shippingDetails": {
       "@type": "OfferShippingDetails",
       "shippingRate": {
         "@type": "MonetaryAmount",
         "value": "0",
         "currency": "USD"
-      },
-      "deliveryTime": {
-        "@type": "ShippingDeliveryTime",
-        "handlingTime": {
-          "@type": "QuantitativeValue",
-          "minValue": "0",
-          "maxValue": "0",
-          "unitCode": "HUR"
-        }
       }
     },
     "hasMerchantReturnPolicy": {
       "@type": "MerchantReturnPolicy",
       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-      "merchantReturnDays": 30,
-      "returnMethod": "https://schema.org/ReturnByMail",
-      "returnFees": "https://schema.org/FreeReturn"
+      "merchantReturnDays": 30
     }
   },
   "aggregateRating": {
@@ -92,7 +82,8 @@ export default function Home() {
     "ratingValue": "4.8",
     "reviewCount": "249"
   }
-}) }} />
+}
+` }} />
       
       {/* 英雄区域 - 优化SEO，白色背景 + 蓝紫色渐变 */}
       <section id="home" className="hero-section">

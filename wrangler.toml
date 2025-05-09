@@ -1,0 +1,8 @@
+name = "harmonicode-games"
+compatibility_date = "2025-05-09"
+
+[build]
+command = "npm run build"
+
+[site]
+bucket = ".next/static"

@@ -7,8 +7,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // 修改这一行，确保以斜杠开头
-  assetPrefix: '/',
+  assetPrefix: './',
 }
 
 module.exports = nextConfig

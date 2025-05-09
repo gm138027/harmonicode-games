@@ -61,17 +61,13 @@ export default function Home() {
     "priceCurrency": "USD",
     "price": "0",
     "availability": "https://schema.org/InStock",
-    "priceValidUntil": "2026-05-10", // 添加有效期
-    "shippingDetails": {  // 添加运输详情
+    "priceValidUntil": "2026-05-10",
+    "shippingDetails": {
       "@type": "OfferShippingDetails",
       "shippingRate": {
         "@type": "MonetaryAmount",
         "value": "0",
         "currency": "USD"
-      },
-      "shippingDestination": {
-        "@type": "DefinedRegion",
-        "addressCountry": "US"
       },
       "deliveryTime": {
         "@type": "ShippingDeliveryTime",
@@ -80,16 +76,10 @@ export default function Home() {
           "minValue": "0",
           "maxValue": "0",
           "unitCode": "HUR"
-        },
-        "transitTime": {
-          "@type": "QuantitativeValue",
-          "minValue": "0",
-          "maxValue": "0",
-          "unitCode": "HUR"
         }
       }
     },
-    "hasMerchantReturnPolicy": {  // 添加退货政策
+    "hasMerchantReturnPolicy": {
       "@type": "MerchantReturnPolicy",
       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
       "merchantReturnDays": 30,

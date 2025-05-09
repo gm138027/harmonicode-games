@@ -46,28 +46,63 @@ export default function Home() {
       }) }} />
       
       <Script id="product-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "HarmoniCode Games Midiano",
-        "image": "https://harmonicode-games.com/images/midiano-preview.jpg",
-        "description": "Interactive piano learning game that helps users develop real piano skills through engaging gameplay.",
-        "brand": {
-          "@type": "Brand",
-          "name": "HarmoniCode Games"
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "HarmoniCode Games Midiano",
+  "image": "https://harmonicode-games.com/images/midiano-preview.jpg",
+  "description": "Interactive piano learning game that helps users develop real piano skills through engaging gameplay.",
+  "brand": {
+    "@type": "Brand",
+    "name": "HarmoniCode Games"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://harmonicode-games.com/midiano",
+    "priceCurrency": "USD",
+    "price": "0",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2026-05-10", // 添加有效期
+    "shippingDetails": {  // 添加运输详情
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "US"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": "0",
+          "maxValue": "0",
+          "unitCode": "HUR"
         },
-        "offers": {
-          "@type": "Offer",
-          "url": "https://harmonicode-games.com/midiano",
-          "priceCurrency": "USD",
-          "price": "0",
-          "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "249"
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": "0",
+          "maxValue": "0",
+          "unitCode": "HUR"
         }
-      }) }} />
+      }
+    },
+    "hasMerchantReturnPolicy": {  // 添加退货政策
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "249"
+  }
+}) }} />
       
       {/* 英雄区域 - 优化SEO，白色背景 + 蓝紫色渐变 */}
       <section id="home" className="hero-section">

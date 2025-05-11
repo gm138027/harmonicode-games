@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script'; // 1. 新增这一行
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -55,6 +56,22 @@ export default function RootLayout({
             <p className="mb-4">Experience the perfect blend of music and gaming.</p>
           </div>
         </footer>
+
+        {/* Google Analytics 代码开始 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZFM6ESXF9T"
+          strategy="afterInteractive"
+          async
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZFM6ESXF9T');
+          `}
+        </Script>
+        {/* Google Analytics 代码结束 */}
       </body>
     </html>
   );

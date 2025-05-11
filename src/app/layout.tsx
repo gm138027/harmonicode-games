@@ -59,7 +59,7 @@ export default function RootLayout({
 
         {/* Google Analytics 代码开始 */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZFM6ESXF9T"
+          src="https://www.googletagmanager.com/gtag/js?id=G-TFD7DT9JPY"
           strategy="afterInteractive"
           async
         />
@@ -70,7 +70,7 @@ export default function RootLayout({
             gtag('js', new Date());
 
 
-            gtag('config', 'G-ZFM6ESXF9T');
+            gtag('config', 'G-TFD7DT9JPY');
           `}
         </Script>
         {/* Google Analytics 代码结束 */}

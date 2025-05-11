@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import Image from 'next/image';
-import Script from 'next/script'; // 1. 新增这一行
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -54,6 +54,16 @@ export default function RootLayout({
           <div className="container">
             <p>© {new Date().getFullYear()} HarmoniCode Games. All rights reserved.</p>
             <p className="mb-4">Experience the perfect blend of music and gaming.</p>
+            <p style={{ fontSize: '0.875rem', color: 'var(--apple-gray-500)' }}>
+              Midiano is developed and maintained by <a 
+                href="https://midiano.com/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style={{ color: 'var(--apple-blue)', textDecoration: 'none' }}
+              >
+                Midiano.com
+              </a>
+            </p>
           </div>
         </footer>
 
@@ -68,7 +78,6 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
 
             gtag('config', 'G-TFD7DT9JPY');
           `}

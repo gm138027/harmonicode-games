@@ -45,6 +45,21 @@ export default function Home() {
         }
       }) }} />
       
+	   {/* 下面是你要添加的 Organization 结构化数据 */}
+      <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "HarmoniCode Games",
+            "url": "https://harmonicode-games.com/",
+            "logo": "https://harmonicode-games.com/LOGO.png"
+          })
+        }}
+      />
+	  
      <Script id="product-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
 {
   "@context": "https://schema.org/",

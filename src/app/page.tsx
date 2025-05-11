@@ -194,6 +194,9 @@ export default function Home() {
       <section id="play" className="featured-section">
         <div className="container">
           <h2 className="section-title" style={{textAlign: "center", fontSize: "2rem", marginBottom: "2rem"}}>Play Midiano</h2>
+		  <p style={{textAlign: "center", color: "#888", marginBottom: "1.5rem"}}>
+           If the game does not load or run correctly, please try refreshing the page. For the best experience, we recommend using Google Chrome.
+          </p>
           
           {/* 游戏嵌入 - 恢复为原样，保持单独的上方嵌入 */}
           <div style={{marginBottom: "3rem"}}>

@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from "next"
 import React from 'react';
 import Script from 'next/script';
 import Image from 'next/image';
@@ -510,6 +510,147 @@ export default function Home() {
             </div>
           </section>
           
+          {/* FAQ部分 - 提高SEO和用户体验 */}
+          <section style={{marginBottom: "4rem"}}>
+            <h2 className="section-title">Frequently Asked Questions</h2>
+            
+            <div style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "1.5rem"
+            }}>
+              <div className="faq-item" style={{
+                backgroundColor: "var(--apple-gray-100)",
+                borderRadius: "0.75rem",
+                padding: "1.5rem"
+              }}>
+                <h3 style={{
+                  fontSize: "1.1rem", 
+                  fontWeight: "600", 
+                  marginBottom: "0.75rem",
+                  color: "var(--apple-gray-900)"
+                }}>Do I need a real piano or keyboard to use Midiano?</h3>
+                <p style={{color: "var(--apple-gray-700)"}}>
+                  No, you can use your computer keyboard to play. However, connecting a MIDI keyboard via USB will provide a more authentic and enjoyable experience. Midiano works with most MIDI keyboards without requiring any special drivers.
+                </p>
+              </div>
+              
+              <div className="faq-item" style={{
+                backgroundColor: "var(--apple-gray-100)",
+                borderRadius: "0.75rem",
+                padding: "1.5rem"
+              }}>
+                <h3 style={{
+                  fontSize: "1.1rem", 
+                  fontWeight: "600", 
+                  marginBottom: "0.75rem",
+                  color: "var(--apple-gray-900)"
+                }}>Is HarmoniCode Games suitable for complete beginners with no musical experience?</h3>
+                <p style={{color: "var(--apple-gray-700)"}}>
+                  Absolutely! HarmoniCode Games is designed for players of all skill levels, from complete beginners to experienced musicians. The adaptive difficulty and visual guidance make it especially friendly for those new to music. You'll learn at your own pace while having fun.
+                </p>
+              </div>
+              
+              <div className="faq-item" style={{
+                backgroundColor: "var(--apple-gray-100)",
+                borderRadius: "0.75rem",
+                padding: "1.5rem"
+              }}>
+                <h3 style={{
+                  fontSize: "1.1rem", 
+                  fontWeight: "600", 
+                  marginBottom: "0.75rem",
+                  color: "var(--apple-gray-900)"
+                }}>Can I upload my own songs to play in Midiano?</h3>
+                <p style={{color: "var(--apple-gray-700)"}}>
+                  Yes, Midiano supports uploading your own MIDI files, allowing you to practice and play your favorite songs. You can find MIDI files online or create your own using music composition software.
+                </p>
+              </div>
+              
+              <div className="faq-item" style={{
+                backgroundColor: "var(--apple-gray-100)",
+                borderRadius: "0.75rem",
+                padding: "1.5rem"
+              }}>
+                <h3 style={{
+                  fontSize: "1.1rem", 
+                  fontWeight: "600", 
+                  marginBottom: "0.75rem",
+                  color: "var(--apple-gray-900)"
+                }}>How does Midiano help me learn piano better than traditional methods?</h3>
+                <p style={{color: "var(--apple-gray-700)"}}>
+                  Midiano combines visual guidance, instant feedback, and gamification elements that make learning more engaging and efficient. The visualization helps you understand which keys to press and when, while the game-like experience keeps you motivated. This multi-sensory approach has been shown to improve learning speed and retention compared to traditional methods alone.
+                </p>
+              </div>
+              
+              <div className="faq-item" style={{
+                backgroundColor: "var(--apple-gray-100)",
+                borderRadius: "0.75rem",
+                padding: "1.5rem"
+              }}>
+                <h3 style={{
+                  fontSize: "1.1rem", 
+                  fontWeight: "600", 
+                  marginBottom: "0.75rem",
+                  color: "var(--apple-gray-900)"
+                }}>Is Midiano free to use, or are there hidden costs?</h3>
+                <p style={{color: "var(--apple-gray-700)"}}>
+                  Midiano is completely free to use in your browser with no hidden costs. All core features are available without payment. We believe in making music education accessible to everyone.
+                </p>
+              </div>
+            </div>
+          </section>
+          
+          {/* 添加FAQ结构化数据 */}
+          <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a real piano or keyboard to use Midiano?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, you can use your computer keyboard to play. However, connecting a MIDI keyboard via USB will provide a more authentic and enjoyable experience. Midiano works with most MIDI keyboards without requiring any special drivers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is HarmoniCode Games suitable for complete beginners with no musical experience?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! HarmoniCode Games is designed for players of all skill levels, from complete beginners to experienced musicians. The adaptive difficulty and visual guidance make it especially friendly for those new to music. You'll learn at your own pace while having fun."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I upload my own songs to play in Midiano?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Midiano supports uploading your own MIDI files, allowing you to practice and play your favorite songs. You can find MIDI files online or create your own using music composition software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Midiano help me learn piano better than traditional methods?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Midiano combines visual guidance, instant feedback, and gamification elements that make learning more engaging and efficient. The visualization helps you understand which keys to press and when, while the game-like experience keeps you motivated. This multi-sensory approach has been shown to improve learning speed and retention compared to traditional methods alone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Midiano free to use, or are there hidden costs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Midiano is completely free to use in your browser with no hidden costs. All core features are available without payment. We believe in making music education accessible to everyone."
+      }
+    }
+  ]
+}
+          ` }} />
+
           {/* 行动号召 - SEO优化，白色背景 + 蓝紫色渐变按钮 */}
           <section style={{
             backgroundColor: "white", 
@@ -541,21 +682,6 @@ export default function Home() {
                 }}
               >
                 Play Midiano Free Now
-              </a>
-              <a 
-                href="#subscribe" 
-                style={{
-                  backgroundColor: "rgba(175, 82, 222, 0.1)", 
-                  color: "var(--apple-purple)", 
-                  padding: "0.75rem 2rem", 
-                  borderRadius: "999px", 
-                  display: "inline-block", 
-                  fontWeight: "500",
-                  textDecoration: "none",
-                  transition: "all 0.2s ease"
-                }}
-              >
-                Subscribe for Updates
               </a>
             </div>
             <p style={{fontSize: "0.875rem", marginTop: "1.5rem", color: "var(--apple-gray-500)", fontWeight: "400"}}>

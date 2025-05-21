@@ -40,7 +40,7 @@ export default function RootLayout({
               </div>
               <ul className="nav-links">
                 <li><Link href="/#home">Home</Link></li>
-                <li><Link href="/#play">Play Midiano</Link></li>
+                <li><Link href="/play">Play Midiano</Link></li>
                 <li><Link href="/#about">About</Link></li>
               </ul>
             </nav>

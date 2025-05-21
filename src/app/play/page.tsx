@@ -26,7 +26,7 @@ export default function PlayPage() {
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent"
           }}>
-            Play Piano with HarmoniCode Games
+            Play Midiano with HarmoniCode Games
           </h1>
           <p style={{
             fontSize: "1.25rem",
@@ -113,6 +113,48 @@ export default function PlayPage() {
           />
         </section>
         
+        {/* Midiano Introduction - Moved from home page */}
+        <div className="card" style={{marginBottom: "3rem", padding: "2rem", border: "1px solid var(--apple-gray-200)", borderRadius: "12px"}}>
+          <h3 className="section-title" style={{fontSize: "1.75rem", color: "var(--apple-blue)", marginBottom: "1.5rem", fontWeight: "600"}}>Midiano: The Flagship Experience of HarmoniCode Games</h3>
+          
+          <div className="force-flex-row" style={{gap: "2.5rem", display: "flex", flexWrap: "wrap"}}>
+            <div className="force-w-half" style={{flex: "1", minWidth: "300px", paddingRight: "1rem"}}>
+              <p style={{fontSize: "1.125rem", marginBottom: "1.25rem", lineHeight: "1.6", color: "#494949"}}>
+                <strong>Midiano</strong> is the premier piano learning game from <strong>HarmoniCode Games</strong>, 
+                showcasing our innovative approach to music education through interactive gaming. This browser-based 
+                experience represents the core philosophy of HarmoniCode: making music learning engaging, accessible, 
+                and effective for everyone.
+              </p>
+              
+              <p style={{fontSize: "1.125rem", lineHeight: "1.6", color: "#494949"}}>
+                Connect your MIDI keyboard or use your computer keyboard to play along with your favorite songs, 
+                while our advanced visualization technology guides your learning process. Midiano exemplifies 
+                HarmoniCode Games' commitment to blending musical skill development with immersive gameplay.
+              </p>
+            </div>
+            
+            <div className="force-w-half" style={{flex: "1", minWidth: "300px"}}>
+              <h4 style={{fontWeight: "500", color: "#1d1d1f", fontSize: "1.25rem", marginBottom: "1rem"}}>
+                Perfect For:
+              </h4>
+              <ul style={{listStyleType: "none", padding: 0}}>
+                <li style={{marginBottom: "1rem", display: "flex", alignItems: "flex-start", gap: "0.75rem"}}>
+                  <span style={{color: "var(--apple-green)", marginRight: "0.5rem", fontSize: "1.1rem", marginTop: "0.2rem"}}>✓</span> 
+                  <span><strong style={{color: "#1d1d1f", fontWeight: "500"}}>Music Enthusiasts</strong>: Whether you're a beginner or experienced player, Midiano adapts to your skill level, making it the ideal HarmoniCode game for continuous musical growth</span>
+                </li>
+                <li style={{marginBottom: "1rem", display: "flex", alignItems: "flex-start", gap: "0.75rem"}}>
+                  <span style={{color: "var(--apple-green)", marginRight: "0.5rem", fontSize: "1.1rem", marginTop: "0.2rem"}}>✓</span> 
+                  <span><strong style={{color: "#1d1d1f", fontWeight: "500"}}>Piano Learners</strong>: HarmoniCode's Midiano offers a structured yet flexible approach to piano practice, complementing traditional lessons or standing alone as a learning tool</span>
+                </li>
+                <li style={{marginBottom: "1rem", display: "flex", alignItems: "flex-start", gap: "0.75rem"}}>
+                  <span style={{color: "var(--apple-green)", marginRight: "0.5rem", fontSize: "1.1rem", marginTop: "0.2rem"}}>✓</span> 
+                  <span><strong style={{color: "#1d1d1f", fontWeight: "500"}}>Rhythm Game Fans</strong>: Experience HarmoniCode Games' unique approach to rhythm-based gaming with Midiano, where entertainment and skill development merge seamlessly</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
         <section className="game-instructions" style={{
           marginBottom: "3rem",
           backgroundColor: "var(--apple-gray-100)",
@@ -153,24 +195,24 @@ export default function PlayPage() {
                 fontWeight: "600",
                 marginBottom: "1rem",
                 color: "var(--apple-blue)"
-              }}>Keyboard Controls</h3>
+              }}>Gameplay Tips</h3>
               
               <ul style={{ listStyleType: "none", padding: 0 }}>
                 <li style={{ marginBottom: "0.75rem", display: "flex", alignItems: "center" }}>
-                  <span style={{ color: "var(--apple-blue)", marginRight: "0.5rem", fontWeight: "bold" }}>Space</span> 
-                  Play/Pause the current song
+                  <span style={{ color: "var(--apple-green)", marginRight: "0.5rem" }}>✓</span> 
+                  Adjust the playback speed to match your skill level
                 </li>
                 <li style={{ marginBottom: "0.75rem", display: "flex", alignItems: "center" }}>
-                  <span style={{ color: "var(--apple-blue)", marginRight: "0.5rem", fontWeight: "bold" }}>↑/↓</span> 
-                  Adjust playback speed
+                  <span style={{ color: "var(--apple-green)", marginRight: "0.5rem" }}>✓</span> 
+                  Enable "Wait Mode" for a more forgiving learning experience
                 </li>
                 <li style={{ marginBottom: "0.75rem", display: "flex", alignItems: "center" }}>
-                  <span style={{ color: "var(--apple-blue)", marginRight: "0.5rem", fontWeight: "bold" }}>←/→</span> 
-                  Navigate through the song
+                  <span style={{ color: "var(--apple-green)", marginRight: "0.5rem" }}>✓</span> 
+                  Use the visualization to see which keys to press
                 </li>
                 <li style={{ marginBottom: "0.75rem", display: "flex", alignItems: "center" }}>
-                  <span style={{ color: "var(--apple-blue)", marginRight: "0.5rem", fontWeight: "bold" }}>A-Z keys</span> 
-                  Play piano notes (when computer keyboard is selected)
+                  <span style={{ color: "var(--apple-green)", marginRight: "0.5rem" }}>✓</span> 
+                  Practice difficult sections by looping specific parts of the song
                 </li>
               </ul>
             </div>
@@ -186,7 +228,7 @@ export default function PlayPage() {
             marginBottom: "1.5rem",
             color: "var(--apple-gray-900)",
             textAlign: "center"
-          }}>Game Features</h2>
+          }}>Benefits of Playing Midiano</h2>
           
           <div style={{
             display: "grid",
@@ -202,10 +244,10 @@ export default function PlayPage() {
             }}>
               <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>🎵</div>
               <h3 style={{ fontSize: "1.25rem", fontWeight: "600", marginBottom: "0.75rem" }}>
-                Visual Note Guide
+                Improve Musical Skills
               </h3>
               <p style={{ color: "var(--apple-gray-700)" }}>
-                See notes falling down the screen, making it easy to know which keys to press and when
+                Develop rhythm, timing, and finger dexterity through interactive practice
               </p>
             </div>
             
@@ -216,12 +258,12 @@ export default function PlayPage() {
               boxShadow: "0 2px 10px rgba(0, 0, 0, 0.05)",
               border: "1px solid var(--apple-gray-200)"
             }}>
-              <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>🎹</div>
+              <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>🧠</div>
               <h3 style={{ fontSize: "1.25rem", fontWeight: "600", marginBottom: "0.75rem" }}>
-                Customizable Experience
+                Cognitive Benefits
               </h3>
               <p style={{ color: "var(--apple-gray-700)" }}>
-                Adjust playback speed, enable wait mode, and customize your learning experience
+                Enhance concentration, memory, and hand-eye coordination
               </p>
             </div>
             
@@ -232,66 +274,76 @@ export default function PlayPage() {
               boxShadow: "0 2px 10px rgba(0, 0, 0, 0.05)",
               border: "1px solid var(--apple-gray-200)"
             }}>
-              <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>📚</div>
+              <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>🎮</div>
               <h3 style={{ fontSize: "1.25rem", fontWeight: "600", marginBottom: "0.75rem" }}>
-                Song Library
+                Fun Learning Experience
               </h3>
               <p style={{ color: "var(--apple-gray-700)" }}>
-                Access a wide selection of songs or upload your own MIDI files to practice
-              </p>
-            </div>
-            
-            <div style={{
-              backgroundColor: "white",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              boxShadow: "0 2px 10px rgba(0, 0, 0, 0.05)",
-              border: "1px solid var(--apple-gray-200)"
-            }}>
-              <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>🔄</div>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: "600", marginBottom: "0.75rem" }}>
-                Loop & Practice Mode
-              </h3>
-              <p style={{ color: "var(--apple-gray-700)" }}>
-                Repeat difficult sections to perfect your skills with targeted practice
+                Learn piano through an engaging, game-like environment
               </p>
             </div>
           </div>
         </section>
         
-        <section style={{
-          margin: "4rem 0",
-          padding: "2rem",
-          backgroundColor: "white",
-          borderRadius: "18px",
+        <section className="technical-requirements" style={{
+          marginBottom: "3rem",
+          backgroundColor: "var(--apple-gray-100)",
+          borderRadius: "12px",
+          padding: "2rem"
+        }}>
+          <h2 style={{
+            fontSize: "1.75rem",
+            fontWeight: "600",
+            marginBottom: "1.5rem",
+            color: "var(--apple-gray-900)"
+          }}>Technical Requirements</h2>
+          
+          <div>
+            <ul style={{ paddingLeft: "1.5rem" }}>
+              <li style={{ marginBottom: "0.75rem" }}><strong>Browser:</strong> Chrome, Firefox, Edge, or Safari (latest versions)</li>
+              <li style={{ marginBottom: "0.75rem" }}><strong>Optional:</strong> MIDI keyboard with USB connection</li>
+              <li style={{ marginBottom: "0.75rem" }}><strong>Permissions:</strong> Browser permissions for MIDI devices and microphone (for acoustic piano detection)</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section className="explore-more" style={{
           textAlign: "center",
-          boxShadow: "0 4px 30px rgba(0, 0, 0, 0.08)",
+          marginBottom: "3rem",
+          padding: "2rem",
+          borderRadius: "12px",
+          backgroundColor: "var(--apple-gray-50)",
           border: "1px solid var(--apple-gray-200)"
         }}>
           <h2 style={{
             fontSize: "1.75rem",
             fontWeight: "600",
-            marginBottom: "1.25rem"
+            marginBottom: "1.5rem",
+            color: "var(--apple-gray-900)"
           }}>Explore More HarmoniCode Games</h2>
+          
           <p style={{
             fontSize: "1.125rem",
             color: "var(--apple-gray-700)",
-            maxWidth: "800px",
-            margin: "0 auto 1.75rem"
+            maxWidth: "600px",
+            margin: "0 auto 2rem"
           }}>
-            Discover our full collection of interactive music games and learning experiences
+            Discover our full collection of music games designed to make learning fun and effective
           </p>
+          
           <Link href="/" style={{
-            background: "linear-gradient(135deg, var(--apple-blue), var(--apple-purple))",
-            color: "white",
-            padding: "0.75rem 2rem",
-            borderRadius: "999px",
-            fontWeight: "500",
-            textDecoration: "none",
             display: "inline-block",
-            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.15)"
-          }}>
-            View All Games
+            background: "linear-gradient(to right, var(--apple-blue), var(--apple-purple))",
+            color: "white",
+            fontSize: "1.125rem",
+            fontWeight: "500",
+            padding: "0.875rem 2rem",
+            borderRadius: "8px",
+            textDecoration: "none",
+            transition: "all 0.3s ease"
+          }}
+          className="hover-scale">
+            Return to Homepage
           </Link>
         </section>
       </div>

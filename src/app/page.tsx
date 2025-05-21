@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import React from 'react';
 import Script from 'next/script';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'HarmoniCode Games | Free Online Piano Games & Music Learning',
@@ -193,12 +194,12 @@ export default function Home() {
       {/* 游戏区域 */}
       <section id="play" className="featured-section">
         <div className="container">
-          <h2 className="section-title" style={{textAlign: "center", fontSize: "2rem", marginBottom: "2rem"}}>Play Midiano</h2>
+          <h2 className="section-title" style={{textAlign: "center", fontSize: "2rem", marginBottom: "2rem"}}>Play Online Piano Game</h2>
 		  <p style={{textAlign: "center", color: "#888", marginBottom: "1.5rem"}}>
            If the game does not load or run correctly, please try refreshing the page. For the best experience, we recommend using Google Chrome.
           </p>
           
-          {/* 游戏嵌入 - 恢复为原样，保持单独的上方嵌入 */}
+          {/* 游戏嵌入 - 保持游戏嵌入在主页 */}
           <div style={{marginBottom: "3rem"}}>
             <iframe 
               src="https://app.midiano.com/" 
@@ -208,135 +209,22 @@ export default function Home() {
             />
           </div>
           
-          {/* 
-            游戏介绍 - Midiano介绍，精简版，保持SEO效果，苹果风格
-          */}
-          <div className="card" style={{marginBottom: "3rem", padding: "2rem", border: "none"}}>
-            <h3 className="section-title" style={{fontSize: "1.75rem", color: "var(--apple-blue)", marginBottom: "1.5rem", fontWeight: "600"}}>Midiano: The Flagship Experience of HarmoniCode Games</h3>
-            
-            <div className="force-flex-row" style={{gap: "2.5rem"}}>
-              <div className="force-w-half" style={{paddingRight: "1rem"}}>
-                <p style={{fontSize: "1.125rem", marginBottom: "1.25rem", lineHeight: "1.6", color: "#494949"}}>
-                  <strong>Midiano</strong> is the premier piano learning game from <strong>HarmoniCode Games</strong>, 
-                  showcasing our innovative approach to music education through interactive gaming. This browser-based 
-                  experience represents the core philosophy of HarmoniCode: making music learning engaging, accessible, 
-                  and effective for everyone.
-                </p>
-                
-                <p style={{fontSize: "1.125rem", lineHeight: "1.6", color: "#494949"}}>
-                  Connect your MIDI keyboard or use your computer keyboard to play along with your favorite songs, 
-                  while our advanced visualization technology guides your learning process. Midiano exemplifies 
-                  HarmoniCode Games' commitment to blending musical skill development with immersive gameplay.
-                </p>
-              </div>
-              
-              <div className="force-w-half">
-                <h4 style={{fontWeight: "500", color: "#1d1d1f", fontSize: "1.25rem", marginBottom: "1rem"}}>
-                  Perfect For:
-                </h4>
-                <ul style={{listStyleType: "none", padding: 0}}>
-                  <li style={{marginBottom: "1rem", display: "flex", alignItems: "flex-start", gap: "0.75rem"}}>
-                    <span style={{color: "var(--apple-green)", marginRight: "0.5rem", fontSize: "1.1rem", marginTop: "0.2rem"}}>✓</span> 
-                    <span><strong style={{color: "#1d1d1f", fontWeight: "500"}}>Music Enthusiasts</strong>: Whether you're a beginner or experienced player, Midiano adapts to your skill level, making it the ideal HarmoniCode game for continuous musical growth</span>
-                  </li>
-                  <li style={{marginBottom: "1rem", display: "flex", alignItems: "flex-start", gap: "0.75rem"}}>
-                    <span style={{color: "var(--apple-green)", marginRight: "0.5rem", fontSize: "1.1rem", marginTop: "0.2rem"}}>✓</span> 
-                    <span><strong style={{color: "#1d1d1f", fontWeight: "500"}}>Piano Learners</strong>: HarmoniCode's Midiano offers a structured yet flexible approach to piano practice, complementing traditional lessons or standing alone as a learning tool</span>
-                  </li>
-                  <li style={{marginBottom: "1rem", display: "flex", alignItems: "flex-start", gap: "0.75rem"}}>
-                    <span style={{color: "var(--apple-green)", marginRight: "0.5rem", fontSize: "1.1rem", marginTop: "0.2rem"}}>✓</span> 
-                    <span><strong style={{color: "#1d1d1f", fontWeight: "500"}}>Rhythm Game Fans</strong>: Experience HarmoniCode Games' unique approach to rhythm-based gaming with Midiano, where entertainment and skill development merge seamlessly</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div style={{textAlign: "center", marginBottom: "3rem"}}>
+            <Link href="/play" style={{
+              display: "inline-block",
+              background: "linear-gradient(to right, var(--apple-blue), var(--apple-purple))",
+              color: "white",
+              fontSize: "1.125rem",
+              fontWeight: "500",
+              padding: "0.875rem 2rem",
+              borderRadius: "8px",
+              textDecoration: "none",
+              transition: "all 0.3s ease"
+            }}
+            className="hover-scale">
+              View Full Game Experience
+            </Link>
           </div>
-          
-          {/* 
-            如何玩 - 左右结构布局
-            左侧是入门指南，右侧是游戏技巧
-          */}
-          <section style={{marginBottom: "3rem"}}>
-            <h2 className="section-title">How to Play</h2>
-            
-            <div className="force-flex-row" style={{gap: "1rem"}}>
-              <div className="force-w-half" style={{paddingRight: "1rem"}}>
-                <h3 style={{fontSize: "1.25rem", fontWeight: "600", color: "var(--apple-blue)", marginBottom: "1rem"}}>Getting Started</h3>
-                <ol style={{paddingLeft: "1.5rem"}}>
-                  <li style={{marginBottom: "0.75rem"}}>Allow browser permissions for MIDI devices when prompted</li>
-                  <li style={{marginBottom: "0.75rem"}}>Connect your MIDI keyboard via USB (optional)</li>
-                  <li style={{marginBottom: "0.75rem"}}>If you don't have a MIDI keyboard, you can use your computer keyboard</li>
-                  <li style={{marginBottom: "0.75rem"}}>Select a song from the library or upload your own MIDI file</li>
-                </ol>
-              </div>
-              
-              <div className="force-w-half">
-                <h3 style={{fontSize: "1.25rem", fontWeight: "600", color: "var(--apple-blue)", marginBottom: "1rem"}}>Gameplay Tips</h3>
-                <ul style={{listStyleType: "none", padding: 0}}>
-                  <li style={{marginBottom: "0.75rem", display: "flex", alignItems: "center"}}>
-                    <span style={{color: "var(--apple-green)", marginRight: "0.5rem"}}>✓</span> 
-                    Adjust the playback speed to match your skill level
-                  </li>
-                  <li style={{marginBottom: "0.75rem", display: "flex", alignItems: "center"}}>
-                    <span style={{color: "var(--apple-green)", marginRight: "0.5rem"}}>✓</span> 
-                    Enable "Wait Mode" for a more forgiving learning experience
-                  </li>
-                  <li style={{marginBottom: "0.75rem", display: "flex", alignItems: "center"}}>
-                    <span style={{color: "var(--apple-green)", marginRight: "0.5rem"}}>✓</span> 
-                    Use the visualization to see which keys to press
-                  </li>
-                  <li style={{marginBottom: "0.75rem", display: "flex", alignItems: "center"}}>
-                    <span style={{color: "var(--apple-green)", marginRight: "0.5rem"}}>✓</span> 
-                    Practice difficult sections by looping specific parts of the song
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          
-          {/* 好处部分保持原样的网格布局 */}
-          <section style={{marginBottom: "3rem"}}>
-            <h2 className="section-title">Benefits of Playing Midiano</h2>
-            
-            <div style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem"}}>
-              <div className="card">
-                <div className="icon-container">
-                  🎵
-                </div>
-                <h3 style={{fontWeight: "600", marginBottom: "0.5rem", color: "var(--apple-gray-900)"}}>Improve Musical Skills</h3>
-                <p style={{color: "var(--apple-gray-700)"}}>Develop rhythm, timing, and finger dexterity through interactive practice</p>
-              </div>
-              
-              <div className="card">
-                <div className="icon-container green">
-                  🧠
-                </div>
-                <h3 style={{fontWeight: "600", marginBottom: "0.5rem", color: "var(--apple-gray-900)"}}>Cognitive Benefits</h3>
-                <p style={{color: "var(--apple-gray-700)"}}>Enhance concentration, memory, and hand-eye coordination</p>
-              </div>
-              
-              <div className="card">
-                <div className="icon-container purple">
-                  🎮
-                </div>
-                <h3 style={{fontWeight: "600", marginBottom: "0.5rem", color: "var(--apple-gray-900)"}}>Fun Learning Experience</h3>
-                <p style={{color: "var(--apple-gray-700)"}}>Learn piano through an engaging, game-like environment</p>
-              </div>
-            </div>
-          </section>
-          
-          {/* 技术要求 */}
-          <section>
-            <h2 className="section-title">Technical Requirements</h2>
-            
-            <div style={{backgroundColor: "var(--apple-gray-100)", padding: "1.5rem", borderRadius: "0.75rem"}}>
-              <ul style={{paddingLeft: "1.5rem"}}>
-                <li style={{marginBottom: "0.75rem"}}><strong>Browser:</strong> Chrome, Firefox, Edge, or Safari (latest versions)</li>
-                <li style={{marginBottom: "0.75rem"}}><strong>Optional:</strong> MIDI keyboard with USB connection</li>
-                <li style={{marginBottom: "0.75rem"}}><strong>Permissions:</strong> Browser permissions for MIDI devices and microphone (for acoustic piano detection)</li>
-              </ul>
-            </div>
-          </section>
         </div>
       </section>
 

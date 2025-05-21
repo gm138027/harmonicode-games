@@ -123,7 +123,7 @@ export default function Home() {
               </p>
               <div style={{display: "flex", gap: "1rem", marginTop: "2rem", flexWrap: "wrap"}}>
                 <a 
-                  href="#play" 
+                  href="/play" 
                   className="button-primary"
                   style={{
                     borderRadius: "999px", 

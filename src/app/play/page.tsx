@@ -1,13 +1,8 @@
+"use client"
+
 import React from 'react';
-import type { Metadata } from "next";
 import Image from 'next/image';
 import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Play Piano Games | HarmoniCode Games',
-  description: 'Play our interactive online piano games right in your browser. Learn piano and develop musical skills through engaging gameplay with HarmoniCode Games.',
-  keywords: 'play piano games, online piano, harmonicode piano game, interactive music game, piano learning game, Midiano',
-}
 
 export default function PlayPage() {
   return (
@@ -70,16 +65,30 @@ export default function PlayPage() {
               Midiano Piano Game
             </div>
             <div className="game-controls">
-              <button style={{
-                backgroundColor: "var(--apple-green)",
-                color: "white",
-                border: "none",
-                borderRadius: "4px",
-                padding: "0.5rem 1rem",
-                fontSize: "0.875rem",
-                fontWeight: "500",
-                cursor: "pointer"
-              }}>
+              <button 
+                onClick={() => {
+                  const iframe = document.querySelector('iframe');
+                  if (iframe) {
+                    if (iframe.requestFullscreen) {
+                      iframe.requestFullscreen();
+                    } else if (iframe.webkitRequestFullscreen) { /* Safari */
+                      iframe.webkitRequestFullscreen();
+                    } else if (iframe.msRequestFullscreen) { /* IE11 */
+                      iframe.msRequestFullscreen();
+                    }
+                  }
+                }}
+                style={{
+                  backgroundColor: "var(--apple-green)",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "4px",
+                  padding: "0.5rem 1rem",
+                  fontSize: "0.875rem",
+                  fontWeight: "500",
+                  cursor: "pointer"
+                }}
+              >
                 Fullscreen
               </button>
             </div>
@@ -87,13 +96,14 @@ export default function PlayPage() {
           
           <iframe 
             src="https://app.midiano.com/" 
-            allow="midi; microphone; camera" 
+            allow="midi; microphone; camera; fullscreen" 
             style={{
               width: "100%",
               height: "600px",
               border: "none"
             }}
             title="Midiano - Learn piano in your browser"
+            id="midiano-iframe"
           />
         </section>
         

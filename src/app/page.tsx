@@ -4,26 +4,26 @@ import Script from 'next/script';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'HarmoniCode Games | Revolutionary Music-Based Gaming Experience',
-  description: 'Immerse yourself in HarmoniCode Games, where music and gaming converge. Play interactive rhythm-based games, learn musical instruments online, and develop real musical skills through engaging gameplay.',
-  keywords: 'HarmoniCode Games, music gaming, rhythm games, interactive music games, learn piano online, musical skill development, music education games, Midiano',
+  title: 'HarmoniCode Games | Free Online Piano Games & Music Learning',
+  description: 'Play interactive piano games online at HarmoniCode Games. Learn music through fun gaming experience - we focus exclusively on music education through engaging gameplay.',
+  keywords: 'HarmoniCode Games, online piano games, harmonicode video games, interactive music games, learn piano online, musical skill development, music education games, Midiano',
   openGraph: {
-    title: 'HarmoniCode Games | Where Music and Gaming Converge',
-    description: 'Experience the revolutionary blend of music and interactive gaming with HarmoniCode Games. Learn instruments, develop musical skills, and have fun in our immersive rhythm-based gaming platform.',
+    title: 'HarmoniCode Games | Free Online Piano Games',
+    description: 'Experience our free online piano games and interactive music video games. Learn piano and develop musical skills through fun, engaging gameplay.',
     images: [
       {
         url: '/images/harmonicode-games-og.jpg',
         width: 1200,
         height: 630,
-        alt: 'HarmoniCode Games - Interactive Music Gaming Experience',
+        alt: 'HarmoniCode Games - Interactive Online Piano Gaming Experience',
       }
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'HarmoniCode Games | Interactive Music Gaming',
-    description: 'Where music becomes the central element of gameplay. Learn instruments while having fun!',
+    title: 'HarmoniCode Games | Online Piano Games',
+    description: 'Play free online piano games and learn music while having fun!',
     images: ['/images/harmonicode-games-twitter.jpg'],
   },
 }
@@ -36,11 +36,11 @@ export default function Home() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "HarmoniCode Games",
-        "url": "https://harmonicode-games.com/",
-        "description": "Interactive music-based gaming platform for learning musical instruments and developing musical skills through immersive gameplay.",
+        "url": "https://harmonicodegames.com/",
+        "description": "Free online piano games and interactive music learning platform. Learn to play piano and other instruments through engaging video games.",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://harmonicode-games.com/search?q={search_term_string}",
+          "target": "https://harmonicodegames.com/search?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       }) }} />
@@ -54,8 +54,8 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "HarmoniCode Games",
-            "url": "https://harmonicode-games.com/",
-            "logo": "https://harmonicode-games.com/LOGO.png"
+            "url": "https://harmonicodegames.com/",
+            "logo": "https://harmonicodegames.com/LOGO.png"
           })
         }}
       />
@@ -63,34 +63,19 @@ export default function Home() {
      <Script id="product-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
 {
   "@context": "https://schema.org/",
-  "@type": "Product",
+  "@type": "VideoGame",
   "name": "HarmoniCode Games Midiano",
-  "image": "https://harmonicode-games.com/images/midiano-preview.jpg",
-  "description": "Interactive piano learning game that helps users develop real piano skills through engaging gameplay.",
-  "brand": {
-    "@type": "Brand",
-    "name": "HarmoniCode Games"
-  },
+  "applicationCategory": "Game, MusicGame",
+  "gamePlatform": "Web Browser",
+  "genre": "Music, Educational",
+  "image": "https://harmonicodegames.com/images/midiano-preview.jpg",
+  "description": "Interactive online piano game that helps users develop real piano skills through engaging gameplay.",
   "offers": {
     "@type": "Offer",
-    "url": "https://harmonicode-games.com/midiano",
+    "url": "https://harmonicodegames.com/",
     "priceCurrency": "USD",
     "price": "0",
-    "priceValidUntil": "2026-05-10",
-    "availability": "https://schema.org/InStock",
-    "shippingDetails": {
-      "@type": "OfferShippingDetails",
-      "shippingRate": {
-        "@type": "MonetaryAmount",
-        "value": "0",
-        "currency": "USD"
-      }
-    },
-    "hasMerchantReturnPolicy": {
-      "@type": "MerchantReturnPolicy",
-      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-      "merchantReturnDays": 30
-    }
+    "availability": "https://schema.org/InStock"
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -123,7 +108,7 @@ export default function Home() {
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent"
               }}>
-                HarmoniCode Games: Where Music Becomes Interactive Gaming
+                HarmoniCode Games: Interactive Online Piano Games & Music Learning
               </h1>
               <p className="subtitle" style={{
                 fontSize: "1.25rem", 
@@ -133,8 +118,8 @@ export default function Home() {
                 marginTop: "1.25rem",
                 maxWidth: "90%"
               }}>
-                Experience our revolutionary rhythm-based games that transform musical learning into an 
-                immersive gaming adventure. Develop real musical skills while having fun.
+                Play our free online piano games and interactive music video games. Unlike sports-related gaming platforms, 
+                we focus exclusively on helping you learn music through fun, engaging gameplay.
               </p>
               <div style={{display: "flex", gap: "1rem", marginTop: "2rem", flexWrap: "wrap"}}>
                 <a 
@@ -150,7 +135,7 @@ export default function Home() {
                     letterSpacing: "0.01em"
                   }}
                 >
-                  Play Midiano Now
+                  Play Free Online Piano Game Now
                 </a>
                 <a 
                   href="#about" 

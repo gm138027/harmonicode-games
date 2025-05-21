@@ -9,9 +9,9 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://harmonicodegames.com'),
-  title: 'HarmoniCode Games | Interactive Music Gaming',
-  description: 'Experience the fusion of music and gaming with HarmoniCode Games, featuring interactive rhythm-based games for all skill levels.',
-  keywords: ['harmonicode games', 'music games', 'rhythm games', 'interactive music', 'piano games'],
+  title: 'HarmoniCode Games | Free Online Piano Games & Music Learning',
+  description: 'Play interactive piano games online at HarmoniCode Games. Learn music through fun gaming experience - we focus on music education, not sports-related content.',
+  keywords: ['harmonicode games', 'online piano games', 'harmonicode video games', 'music games', 'rhythm games', 'interactive music', 'piano games'],
 }
 
 export default function RootLayout({

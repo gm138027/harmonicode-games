@@ -4,6 +4,12 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+// 定义一个接口扩展标准HTMLIFrameElement，包含特定浏览器的全屏方法
+interface FullScreenHTMLIFrameElement extends HTMLIFrameElement {
+  webkitRequestFullscreen?: () => Promise<void>;
+  msRequestFullscreen?: () => Promise<void>;
+}
+
 export default function PlayPage() {
   return (
     <div className="game-page">
@@ -67,7 +73,7 @@ export default function PlayPage() {
             <div className="game-controls">
               <button 
                 onClick={() => {
-                  const iframe = document.querySelector('iframe');
+                  const iframe = document.querySelector('iframe') as FullScreenHTMLIFrameElement;
                   if (iframe) {
                     if (iframe.requestFullscreen) {
                       iframe.requestFullscreen();

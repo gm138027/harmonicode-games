@@ -529,9 +529,9 @@ export default function Home() {
                   fontWeight: "600", 
                   marginBottom: "0.75rem",
                   color: "var(--apple-gray-900)"
-                }}>Do I need a real piano or keyboard to use Midiano?</h3>
+                }}>What is HarmoniCode Games?</h3>
                 <p style={{color: "var(--apple-gray-700)"}}>
-                  No, you can use your computer keyboard to play. However, connecting a MIDI keyboard via USB will provide a more authentic and enjoyable experience. Midiano works with most MIDI keyboards without requiring any special drivers.
+                  HarmoniCode Games is a platform dedicated to interactive music gaming experiences where music is the central element of gameplay, not just a background feature. We've created a unique intersection where musical skill development, rhythm training, and interactive entertainment converge, allowing players to develop real musical abilities while having fun.
                 </p>
               </div>
               
@@ -545,9 +545,9 @@ export default function Home() {
                   fontWeight: "600", 
                   marginBottom: "0.75rem",
                   color: "var(--apple-gray-900)"
-                }}>Is HarmoniCode Games suitable for complete beginners with no musical experience?</h3>
+                }}>How does HarmoniCode Games help users learn music?</h3>
                 <p style={{color: "var(--apple-gray-700)"}}>
-                  Absolutely! HarmoniCode Games is designed for players of all skill levels, from complete beginners to experienced musicians. The adaptive difficulty and visual guidance make it especially friendly for those new to music. You'll learn at your own pace while having fun.
+                  Our platform naturally builds genuine musical abilities through engaging gameplay. By visualizing musical elements, providing instant feedback, and creating an immersive multi-sensory experience, HarmoniCode Games teaches rhythm recognition, timing precision, note reading, and instrumental techniques. This approach makes learning more enjoyable and effective than traditional methods alone.
                 </p>
               </div>
               
@@ -561,9 +561,9 @@ export default function Home() {
                   fontWeight: "600", 
                   marginBottom: "0.75rem",
                   color: "var(--apple-gray-900)"
-                }}>Can I upload my own songs to play in Midiano?</h3>
+                }}>Do I need prior musical knowledge to use HarmoniCode Games?</h3>
                 <p style={{color: "var(--apple-gray-700)"}}>
-                  Yes, Midiano supports uploading your own MIDI files, allowing you to practice and play your favorite songs. You can find MIDI files online or create your own using music composition software.
+                  Absolutely not! HarmoniCode Games is designed for players of all skill levels, from complete beginners to experienced musicians. Our adaptive difficulty system and visual guidance make it especially friendly for those new to music. You'll learn at your own pace while having fun, and no prior musical knowledge is required to start your journey.
                 </p>
               </div>
               
@@ -577,9 +577,9 @@ export default function Home() {
                   fontWeight: "600", 
                   marginBottom: "0.75rem",
                   color: "var(--apple-gray-900)"
-                }}>How does Midiano help me learn piano better than traditional methods?</h3>
+                }}>What types of music games does HarmoniCode offer?</h3>
                 <p style={{color: "var(--apple-gray-700)"}}>
-                  Midiano combines visual guidance, instant feedback, and gamification elements that make learning more engaging and efficient. The visualization helps you understand which keys to press and when, while the game-like experience keeps you motivated. This multi-sensory approach has been shown to improve learning speed and retention compared to traditional methods alone.
+                  HarmoniCode Games offers a variety of music-based games, including piano learning experiences like Midiano, rhythm-based challenges, composition tools, and more. Each game is designed to develop different musical skills while maintaining an engaging, game-like experience. We're constantly expanding our library to cover more instruments and musical concepts.
                 </p>
               </div>
               
@@ -593,9 +593,25 @@ export default function Home() {
                   fontWeight: "600", 
                   marginBottom: "0.75rem",
                   color: "var(--apple-gray-900)"
-                }}>Is Midiano free to use, or are there hidden costs?</h3>
+                }}>Is HarmoniCode Games free to use?</h3>
                 <p style={{color: "var(--apple-gray-700)"}}>
-                  Midiano is completely free to use in your browser with no hidden costs. All core features are available without payment. We believe in making music education accessible to everyone.
+                  Yes! We believe in making music education accessible to everyone. HarmoniCode Games core experiences, including Midiano, are completely free to use in your browser with no hidden costs. All essential features are available without payment, allowing anyone to start their musical journey without financial barriers.
+                </p>
+              </div>
+              
+              <div className="faq-item" style={{
+                backgroundColor: "var(--apple-gray-100)",
+                borderRadius: "0.75rem",
+                padding: "1.5rem"
+              }}>
+                <h3 style={{
+                  fontSize: "1.1rem", 
+                  fontWeight: "600", 
+                  marginBottom: "0.75rem",
+                  color: "var(--apple-gray-900)"
+                }}>How can I get started with HarmoniCode Games?</h3>
+                <p style={{color: "var(--apple-gray-700)"}}>
+                  Getting started is simple! Just visit our website and you can immediately begin playing our browser-based games without any downloads or installations. For the best experience, we recommend using a modern browser like Chrome. While a MIDI keyboard can enhance your experience, it's completely optional - you can use your computer keyboard to play our games.
                 </p>
               </div>
             </div>
@@ -609,42 +625,50 @@ export default function Home() {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Do I need a real piano or keyboard to use Midiano?",
+      "name": "What is HarmoniCode Games?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, you can use your computer keyboard to play. However, connecting a MIDI keyboard via USB will provide a more authentic and enjoyable experience. Midiano works with most MIDI keyboards without requiring any special drivers."
+        "text": "HarmoniCode Games is a platform dedicated to interactive music gaming experiences where music is the central element of gameplay, not just a background feature. We've created a unique intersection where musical skill development, rhythm training, and interactive entertainment converge, allowing players to develop real musical abilities while having fun."
       }
     },
     {
       "@type": "Question",
-      "name": "Is HarmoniCode Games suitable for complete beginners with no musical experience?",
+      "name": "How does HarmoniCode Games help users learn music?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! HarmoniCode Games is designed for players of all skill levels, from complete beginners to experienced musicians. The adaptive difficulty and visual guidance make it especially friendly for those new to music. You'll learn at your own pace while having fun."
+        "text": "Our platform naturally builds genuine musical abilities through engaging gameplay. By visualizing musical elements, providing instant feedback, and creating an immersive multi-sensory experience, HarmoniCode Games teaches rhythm recognition, timing precision, note reading, and instrumental techniques. This approach makes learning more enjoyable and effective than traditional methods alone."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I upload my own songs to play in Midiano?",
+      "name": "Do I need prior musical knowledge to use HarmoniCode Games?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Midiano supports uploading your own MIDI files, allowing you to practice and play your favorite songs. You can find MIDI files online or create your own using music composition software."
+        "text": "Absolutely not! HarmoniCode Games is designed for players of all skill levels, from complete beginners to experienced musicians. Our adaptive difficulty system and visual guidance make it especially friendly for those new to music. You'll learn at your own pace while having fun, and no prior musical knowledge is required to start your journey."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Midiano help me learn piano better than traditional methods?",
+      "name": "What types of music games does HarmoniCode offer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Midiano combines visual guidance, instant feedback, and gamification elements that make learning more engaging and efficient. The visualization helps you understand which keys to press and when, while the game-like experience keeps you motivated. This multi-sensory approach has been shown to improve learning speed and retention compared to traditional methods alone."
+        "text": "HarmoniCode Games offers a variety of music-based games, including piano learning experiences like Midiano, rhythm-based challenges, composition tools, and more. Each game is designed to develop different musical skills while maintaining an engaging, game-like experience. We're constantly expanding our library to cover more instruments and musical concepts."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Midiano free to use, or are there hidden costs?",
+      "name": "Is HarmoniCode Games free to use?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Midiano is completely free to use in your browser with no hidden costs. All core features are available without payment. We believe in making music education accessible to everyone."
+        "text": "Yes! We believe in making music education accessible to everyone. HarmoniCode Games core experiences, including Midiano, are completely free to use in your browser with no hidden costs. All essential features are available without payment, allowing anyone to start their musical journey without financial barriers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I get started with HarmoniCode Games?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Getting started is simple! Just visit our website and you can immediately begin playing our browser-based games without any downloads or installations. For the best experience, we recommend using a modern browser like Chrome. While a MIDI keyboard can enhance your experience, it's completely optional - you can use your computer keyboard to play our games."
       }
     }
   ]

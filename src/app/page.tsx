@@ -56,7 +56,7 @@ export default function Home() {
             "@type": "Organization",
             "name": "HarmoniCode Games",
             "url": "https://harmonicodegames.com/",
-            "logo": "https://harmonicodegames.com/LOGO.png"
+            "logo": "https://harmonicodegames.com/logo/android-chrome-512x512.png"
           })
         }}
       />

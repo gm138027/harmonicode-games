@@ -12,6 +12,15 @@ export const metadata: Metadata = {
   title: 'HarmoniCode Games | Free Online Piano Games & Music Learning',
   description: 'Play interactive piano games online at HarmoniCode Games. Learn music through fun gaming experience - we focus on music education, not sports-related content.',
   keywords: ['harmonicode games', 'online piano games', 'harmonicode video games', 'music games', 'rhythm games', 'interactive music', 'piano games'],
+  icons: {
+    icon: [
+      { url: '/logo/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/logo/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    shortcut: '/logo/favicon.ico',
+    apple: '/logo/apple-touch-icon.png',
+  },
+  manifest: '/logo/site.webmanifest',
 }
 
 export default function RootLayout({
@@ -63,6 +72,10 @@ export default function RootLayout({
               >
                 Midiano.com
               </a>
+            </p>
+            <p className="mb-4">
+              <Link href="/privacy" style={{ marginRight: '1rem', color: 'var(--apple-blue)' }}>Privacy Policy</Link>
+              <Link href="/terms" style={{ color: 'var(--apple-blue)' }}>Terms of Service</Link>
             </p>
           </div>
         </footer>

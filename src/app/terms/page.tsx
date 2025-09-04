@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
   title: 'Terms of Service | HarmoniCode Games',
@@ -90,7 +91,7 @@ export default function TermsOfServicePage() {
       <div className="card" style={{ marginBottom: '1.5rem' }}>
         <h2 className="mb-2">Contact</h2>
         <p>
-          If you have questions about these Terms, please contact us at: support@harmonicodegames.com
+          If you have questions about these Terms, please contact us at: {siteConfig.contact.email}
         </p>
       </div>
     </div>

@@ -4,14 +4,15 @@ import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
+import { siteConfig } from '@/config/site';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://harmonicodegames.com'),
+  metadataBase: new URL(siteConfig.url),
   title: 'HarmoniCode Games | Free Online Piano Games & Music Learning',
-  description: 'Play interactive piano games online at HarmoniCode Games. Learn music through fun gaming experience - we focus on music education, not sports-related content.',
-  keywords: ['harmonicode games', 'online piano games', 'harmonicode video games', 'music games', 'rhythm games', 'interactive music', 'piano games'],
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
   icons: {
     icon: [
       { url: '/logo/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
@@ -82,7 +83,7 @@ export default function RootLayout({
 
         {/* Google Analytics 代码开始 */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-TS21E32FST"
+          src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics.googleAnalyticsId}`}
           strategy="afterInteractive"
           async
         />
@@ -92,7 +93,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-TS21E32FST');
+            gtag('config', '${siteConfig.analytics.googleAnalyticsId}');
           `}
         </Script>
         {/* Google Analytics 代码结束 */}

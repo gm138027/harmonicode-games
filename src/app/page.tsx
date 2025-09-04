@@ -3,11 +3,12 @@ import React from 'react';
 import Script from 'next/script';
 import Image from 'next/image';
 import Link from 'next/link';
+import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
   title: 'HarmoniCode Games | Free Online Piano Games & Music Learning',
-  description: 'Play interactive piano games online at HarmoniCode Games. Learn music through fun gaming experience - we focus exclusively on music education through engaging gameplay.',
-  keywords: 'HarmoniCode Games, online piano games, harmonicode video games, interactive music games, learn piano online, musical skill development, music education games, Midiano',
+  description: siteConfig.description,
+  keywords: siteConfig.keywords.join(', '),
   openGraph: {
     title: 'HarmoniCode Games | Free Online Piano Games',
     description: 'Experience our free online piano games and interactive music video games. Learn piano and develop musical skills through fun, engaging gameplay.',
@@ -36,12 +37,12 @@ export default function Home() {
       <Script id="schema-data" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "HarmoniCode Games",
-        "url": "https://harmonicodegames.com/",
-        "description": "Free online piano games and interactive music learning platform. Learn to play piano and other instruments through engaging video games.",
+        "name": siteConfig.name,
+        "url": siteConfig.url,
+        "description": siteConfig.description,
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://harmonicodegames.com/search?q={search_term_string}",
+          "target": `${siteConfig.url}/search?q={search_term_string}`,
           "query-input": "required name=search_term_string"
         }
       }) }} />
@@ -54,9 +55,9 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "HarmoniCode Games",
-            "url": "https://harmonicodegames.com/",
-            "logo": "https://harmonicodegames.com/logo/android-chrome-512x512.png"
+            "name": siteConfig.name,
+            "url": siteConfig.url,
+            "logo": `${siteConfig.url}/logo/android-chrome-512x512.png`
           })
         }}
       />

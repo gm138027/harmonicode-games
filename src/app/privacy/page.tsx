@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { siteConfig } from '@/config/site'
+import { siteConfig } from '../../config/site'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | HarmoniCode Games',
@@ -83,7 +83,7 @@ export default function PrivacyPolicyPage() {
       <div className="card" style={{ marginBottom: '1.5rem' }}>
         <h2 className="mb-2">Contact</h2>
         <p>
-          If you have questions about this policy or your data rights, please contact us at: {siteConfig.contact.email}
+          If you have questions about this policy or your data rights, please contact us at: <a href={`mailto:${siteConfig.contact.email}`} style={{ color: 'var(--apple-blue)', textDecoration: 'none' }}>{siteConfig.contact.email}</a>
         </p>
       </div>
 

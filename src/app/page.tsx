@@ -3,7 +3,7 @@ import React from 'react';
 import Script from 'next/script';
 import Image from 'next/image';
 import Link from 'next/link';
-import { siteConfig } from '@/config/site';
+import { siteConfig } from '../config/site';
 
 export const metadata: Metadata = {
   title: 'HarmoniCode Games | Free Online Piano Games & Music Learning',
